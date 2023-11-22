@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-1">
+          <div class="row flex-column">
+            <div id="baitap" class="col baitap mb-4 active">
+              <i class="fa-solid fa-book-journal-whills"></i>Bài 1
+            </div>
+            <div id="baitap" class="col baitap mb-4">
+              <i class="fa-solid fa-book-journal-whills"></i>Bài 2
+            </div>
+            <div id="baitap" class="col baitap mb-4">
+              <i class="fa-solid fa-book-journal-whills"></i>Bài 3
+            </div>
+            <div id="baitap" class="col baitap mb-4">
+              <i class="fa-solid fa-book-journal-whills"></i>Bài 4
+            </div>
+            <div id="baitap" class="col baitap">
+              <i class="fa-solid fa-book-journal-whills"></i>Bài 5
+            </div>
+          </div>
+        </div>
+        <div class="col-10 offset-1 tab__baitap active__tab">
+          <h2>Tính tiền lương nhân viên</h2>
+          <p></p>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-5">
+                <label for="" class="form-label col-5">Lương một ngày</label>
+                <input
+                  type="text"
+                  name=""
+                  id="luongMotNgay"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="col-5">
+                <label for="" class="form-label col-5">Số ngày làm</label>
+                <input
+                  type="text"
+                  name=""
+                  id="soNgayLam"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="output">
+            <p>Kết quả</p>
+            <span id="output">...</span>
+          </div>
+          <button class="btn btn-success mt-4" id="submitBtn" onclick="tinhLuong()">Submit</button>
+        </div>
+        <div class="col-10 offset-1 tab__baitap">
+          <h2>Tính giá trị trung bình của 5 số do người dùng nhập vào: </h2>
+          <p></p>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-2">
+                <label for="" class="form-label col-12">Số thứ nhất</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so1"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="col-2">
+                <label for="" class="form-label col-12">Số thứ 2</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so2"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="col-2">
+                <label for="" class="form-label col-12">Số thứ 3</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so3"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="col-2">
+                <label for="" class="form-label col-12">Số thứ 4</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so4"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="col-2">
+                <label for="" class="form-label col-12">Số thứ 5</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so5"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="output">
+            <p>Kết quả</p>
+            <span id="output2">...</span>
+          </div>
+          <button class="btn btn-success mt-4" id="bai2" onclick="tinhGiaTriTrungBinh()">Submit</button>
+        </div>
+        <div class="col-10 offset-1 tab__baitap">
+          <h2>Quy đổi tiền USD -> VND: </h2>
+          <p></p>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-5">
+                <label for="" class="form-label col-5">Số USD cần quy đổi</label>
+                <input
+                  type="text"
+                  name=""
+                  id="usd"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="output">
+            <p>Kết quả</p>
+            <span id="output3">...</span>
+          </div>
+          <button class="btn btn-success mt-4" id="bai3" onclick="quyDoiTien()">Submit</button>
+        </div>
+        <div class="col-10 offset-1 tab__baitap">
+          <h2>Tính diện tích và chu vi hình chữ nhật: </h2>
+          <p></p>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-5">
+                <label for="" class="form-label col-5">Chiều dài: </label>
+                <input
+                  type="text"
+                  name=""
+                  id="chieuDai"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <div class="col-5">
+                <label for="" class="form-label col-5">Chiều rộng</label>
+                <input
+                  type="text"
+                  name=""
+                  id="chieuRong"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="output">
+            <p>Kết quả</p>
+            <span id="outputDT">...</span>
+            <span id="outputCV"></span>
+          </div>
+          <button class="btn btn-success mt-4" id="bai4" onclick="tinhDienTich()">Submit</button>
+        </div>
+        <div class="col-10 offset-1 tab__baitap">
+          <h2>Tính tổng 2 ký số</h2>
+          <p></p>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-5">
+                <label for="" class="form-label col-5">Số có 2 ký số: </label>
+                <input
+                  type="text"
+                  name=""
+                  id="so2KySo"
+                  class="form-control"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="output5">
+            <p>Kết quả</p>
+            <span id="output5">...</span>
+          </div>
+          <button class="btn btn-success mt-4" id="bai5" onclick="tinhTongHaiKySo()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
